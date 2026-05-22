@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roast Card Forge</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel controls" aria-label="Roast inputs">
+        <div>
+          <p class="eyebrow">FORGE challenge candidate</p>
+          <h1>Roast Card Forge</h1>
+          <p class="lede">
+            Turn a resume, profile, repo, dorm room, playlist, or idea into a
+            savage-but-shareable 1200 x 630 roast card.
+          </p>
+        </div>
+
+        <label>
+          Roast target
+          <input id="target" value="My GitHub repo" maxlength="52" />
+        </label>
+
+        <label>
+          Paste context
+          <textarea
+            id="context"
+            rows="7"
+            maxlength="900"
+          >A React dashboard with thirteen gradients, no loading states, three TODO comments, and a README that says "coming soon" twice.</textarea>
+        </label>
+
+        <div class="grid">
+          <label>
+            Tone
+            <select id="tone">
+              <option value="witty">Witty</option>
+              <option value="brutal">Brutal</option>
+              <option value="corporate">Corporate chaos</option>
+              <option value="academic">Academic disappointment</option>
+            </select>
+          </label>
+          <label>
+            Theme
+            <select id="theme">
+              <option value="acid">Acid terminal</option>
+              <option value="poster">Hot poster</option>
+              <option value="ink">Editorial ink</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="randomize" type="button">Generate roast</button>
+          <button id="download" type="button">Download PNG</button>
+        </div>
+
+        <div class="presets" aria-label="Example roast targets">
+          <button type="button" data-preset="resume">Resume</button>
+          <button type="button" data-preset="repo">GitHub repo</button>
+          <button type="button" data-preset="playlist">Spotify wrap</button>
+        </div>
+      </section>
+
+      <section class="preview" aria-label="Generated roast card">
+        <canvas id="card" width="1200" height="630"></canvas>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
