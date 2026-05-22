@@ -122,8 +122,8 @@ textarea:focus {
 }
 
 .presets {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -141,7 +141,8 @@ button {
   color: #071009;
 }
 
-#download {
+#download,
+#caption {
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.07);
   color: #f5f7fb;
@@ -153,6 +154,24 @@ button {
   background: transparent;
   color: #b3bac8;
   font-size: 12px;
+}
+
+.presets button:hover,
+.presets button:focus-visible {
+  border-color: rgba(125, 255, 110, 0.62);
+  color: #f5f7fb;
+}
+
+.receipt {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(125, 255, 110, 0.2);
+  border-radius: 10px;
+  background: rgba(125, 255, 110, 0.06);
+  color: #d8ffd3;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .preview {

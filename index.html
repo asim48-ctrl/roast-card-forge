@@ -10,11 +10,12 @@
     <main class="shell">
       <section class="panel controls" aria-label="Roast inputs">
         <div>
-          <p class="eyebrow">FORGE challenge candidate</p>
+          <p class="eyebrow">FORGE roast lab</p>
           <h1>Roast Card Forge</h1>
           <p class="lede">
-            Turn a resume, profile, repo, dorm room, playlist, or idea into a
-            savage-but-shareable 1200 x 630 roast card.
+            Turn a resume, repo, LinkedIn, startup page, playlist, dating
+            profile, dorm room, or course schedule into a postable 1200 x 630
+            PNG.
           </p>
         </div>
 
@@ -55,12 +56,23 @@
         <div class="actions">
           <button id="randomize" type="button">Generate roast</button>
           <button id="download" type="button">Download PNG</button>
+          <button id="caption" type="button">Copy caption</button>
         </div>
 
         <div class="presets" aria-label="Example roast targets">
           <button type="button" data-preset="resume">Resume</button>
           <button type="button" data-preset="repo">GitHub repo</button>
+          <button type="button" data-preset="linkedin">LinkedIn</button>
+          <button type="button" data-preset="startup">Startup page</button>
           <button type="button" data-preset="playlist">Spotify wrap</button>
+          <button type="button" data-preset="dating">Dating profile</button>
+          <button type="button" data-preset="dorm">Dorm room</button>
+          <button type="button" data-preset="schedule">Course schedule</button>
+        </div>
+
+        <div class="receipt" aria-label="Generated roast stats">
+          <span id="score">Roast score: 8.1</span>
+          <span id="archetype">Diagnosis: vibe debt</span>
         </div>
       </section>
 
