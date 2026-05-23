@@ -174,6 +174,43 @@ button {
   font-weight: 800;
 }
 
+.upsell {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid rgba(255, 79, 123, 0.28);
+  border-radius: 10px;
+  background: rgba(255, 79, 123, 0.07);
+}
+
+.upsell h2,
+.upsell p {
+  margin: 0;
+}
+
+.upsell h2 {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.upsell p {
+  color: #b3bac8;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.buy-link {
+  display: inline-grid;
+  min-height: 38px;
+  place-items: center;
+  border-radius: 10px;
+  background: #ff4f7b;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .preview {
   display: grid;
   place-items: center;

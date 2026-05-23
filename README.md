@@ -17,6 +17,19 @@ FORGE page: https://forgechallenge.com/tool/roast-card-forge
 - Copies a social caption for sharing.
 - Runs as static HTML/CSS/JS with no backend and no paid API.
 
+## Monetisation
+
+The free live tool is the traffic hook. The paid product is a GBP 5 Creator Pack:
+
+- Extra roast category templates.
+- Launch captions for X, LinkedIn, Reddit, and Discord.
+- Square/story card format ideas.
+- A no-code setup guide for making a niche version.
+- Product listing copy in `LISTING.md`.
+
+Replace the `mailto:` creator-pack link in `index.html` with a Gumroad, Ko-fi,
+Lemon Squeezy, or itch.io checkout URL after the payout account is configured.
+
 ## Challenge fit
 
 - Free tier only.
